@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
+        <link rel="shortcut icon" type="image" href="icon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky">
-        </form>
+        <div>
+            <a href="advance.html" class="float-right cstm-p-r">Advanced Search</a>
+            <a href="image.html" class="float-right cstm-p">Images</a>
+        </div>
+        <div id="main">
+            <div class="img-div">
+                <img src="logo.png" class="mx-auto d-block logoimg">
+            </div>
+            <div class="center_div">
+                    <form action="https://google.com/search">
+                            <div class="srchinput">
+                                    <div class="insd-div">
+                                        <div class="srchicon-div">
+                                            <div class="srchicon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="srchinput-div">
+                                            <div>
+                                                <input type="text" name="q" class="srch" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="srchicon-div">
+                                            <div>
+                                                <i class="fa fa-microphone" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        <div class="srchbtn-div">
+                            <input type="submit" value="Google Search" class="srchbtn btn">
+                            <input type="submit" name="btnI" value="I'm Feeling Lucky" class="flhbtn btn">
+                        </div>
+                    </form>
+            </div>
+        </div>
     </body>
 </html>

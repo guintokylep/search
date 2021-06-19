@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google Images</title>
+        <link rel="shortcut icon" type="image" href="icon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="text" name="tbm" value="isch"> 
-            <input type="submit" value="Google Search">
-        </form>
+        <div>
+            <a href="advance.html" class="float-right cstm-p-r">Advanced Search</a>
+            <a href="index.html" class="float-right cstm-p">Google</a>
+        </div>
+        <div id="main">
+            <div class="logo-img-div">
+                <div id="imgbg" >
+                    <div id="imgtxt">
+                        <span>images</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center_img-div">
+                    <form action="https://google.com/search">
+                            <div class="srchinput">
+                                    <div class="insd-div">
+                                        <div class="srchicon-div">
+                                            <div class="srchicon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="srchinput-div">
+                                            <div>
+                                                <input type="text" name="q" class="srch" autocomplete="off">
+                                                <input type="text" name="tbm" value="isch" hidden> 
+                                            </div>
+                                        </div>
+                                        <div class="srchicon-div">
+                                            <div class="cam">
+                                                <i class="fa fa-camera" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="mic">
+                                                <i class="fa fa-microphone" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="sec-srchicon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        <div class="srchbtn-div-img">
+                            <input type="submit" value="Google Search" class="srchbtn btn" hidden>
+                        </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

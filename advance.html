@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google Advanced Search</title>
+        <link rel="shortcut icon" type="image" href="icon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="advanced.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="as_q">
-            <input type="text" name="as_epq">
-            <input type="text" name="as_oq">
-            <input type="text" name="as_eq">
-            <input type="text" name="as_nlo">
-            <input type="text" name="as_nhi">
-            <input type="submit" value="Advanced Search">
-        </form>
+        <div>
+            <div class="adv-link-div row">
+                <div class="col">
+                    <a href="index.html"><img src="logo.png" class="logoimg2 cstm-p"></a>
+                </div>
+                <div class="col">
+                    <a href="image.html" class="float-right cstm-p-r">Images</a>
+                    <a href="index.html" class="float-right cstm-p">Google</a>
+                </div>
+            </div>
+        </div>
+        <div class="adv-title-div">
+            <div>
+                <label class="adv-title">Advanced Search</label>
+            </div>
+        </div>
+        <div class="bot-border"></div>
+        <div>
+            <form action="https://google.com/search">
+                <div class="adv-title-div">
+                    <div class="col">
+                        <div class="row cstm-top">
+                            <div class="cstm-col-1">
+                                <label class="cstm-head1">Find pages with...</label>
+                            </div>
+                            <div class="cstm-col-2">
+                            </div>
+                            <div class="cstm-col-3">
+                                <label class="cstm-head2">To do this in the search box.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cstm-col-1">
+                                <label>all these words:</label>
+                            </div>
+                            <div class="cstm-col-2">
+                                <input type="text" class="cstm-field" name="as_q">
+                            </div>
+                            <div class="cstm-col-3">
+                                <label>Type the important words: tri-colour rat terrier</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cstm-col-1">
+                                <label>this exact word or phrase:</label>
+                            </div>
+                            <div class="cstm-col-2">
+                                <input type="text" class="cstm-field" name="as_epq">
+                            </div>
+                            <div class="cstm-col-3">
+                                <label>Put exact words in quotes: "rat terrier"</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cstm-col-1">
+                                <label>any of these words:</label>
+                            </div>
+                            <div class="cstm-col-2">
+                                <input type="text" class="cstm-field" name="as_oq">
+                            </div>
+                            <div class="cstm-col-3">
+                                <label>Type OR between all the words you want: miniature OR standard</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cstm-col-1">
+                                <label>none of these words:</label>
+                            </div>
+                            <div class="cstm-col-2">
+                                <input type="text" class="cstm-field" name="as_eq">
+                            </div>
+                            <div class="cstm-col-3">
+                                <label>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cstm-col-1">
+                                <label>numbers ranging from:</label>
+                            </div>
+                            <div class="cstm-col-4 row">
+                                <div class="cstm-col-5">
+                                    <input type="text" class="cstm-field-hilo" name="as_nlo">
+                                </div>
+                                <div class="cstm-col-6">
+                                    <label>to</label>
+                                </div>
+                                <div class="cstm-col-5">
+                                    <input type="text" class="cstm-field-hilo" name="as_nhi">
+                                </div>
+                            </div>
+                            <div class="cstm-col-3">
+                                <label>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</label>
+                            </div>
+                        </div>
+                        <input type="submit" class="advncdsrchbtn" value="Advanced Search">
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
